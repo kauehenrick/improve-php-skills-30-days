@@ -45,4 +45,27 @@ echo $a . $b . $c;
 
 //Implement a function that takes two boolean variables and returns true if both are true, and false otherwise. Demonstrate this with various combinations of boolean inputs.
 
-//
+//Create a PHP script that replaces all occurrences of the word "cat" with "dog" in a given string, and then converts the modified string to uppercase.
+function replaceCatDog($var)
+{
+    return str_replace("cat", "dog", $var);
+}
+
+echo replaceCatDog($var = "bird, parrot, rabbit, cat, elephant, hawk");
+
+//Write a PHP script that concatenates the strings "Hello" and "World" with a space in between, and then extracts the substring "Hello" from the resulting string.
+$x = "Hello";
+$y = "World!";
+echo $z = "$x $y \n";
+echo substr($z, 0, 5);
+
+//Create a PHP script that trims whitespace from both ends of the string " Hello, World! " and displays the result.
+echo trim(" Hello, World! ");
+
+//Define a constant named FAVORITE_COLOR with the value "Blue" using both define() and const. Print the constant values.
+define("FAVORITE_COLOR", "Blue");
+const FAVORITE_COLOR = "Blue";
+echo FAVORITE_COLOR;
+
+//Write a PHP script that uses the magic constant __FILE__ to display the full path of the current script file.
+echo __FILE__;
